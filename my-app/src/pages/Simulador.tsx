@@ -11,7 +11,7 @@ export default function Simulador() {
   const [erro, setErro] = useState(false);
 
   useEffect(() => {
-    let timer: ReturnType<typeof setTimeout>;
+    let timer: any;
     
     if (isAnalisando) {
       setMensagem('A IA da ECOUP está analisando sua evidência...');
@@ -43,7 +43,7 @@ export default function Simulador() {
   };
 
   const avancarParaEnvio = () => {
-    if (!acaoTitulo.trim()) {
+    if (acaoTitulo === '') {
       setErro(true);
       return;
     }
@@ -82,12 +82,12 @@ export default function Simulador() {
               <div className="text-[4rem] mb-[20px]">🎮</div>
               <h3 className="text-[#00f5c8] font-bold text-[1.8rem] mb-[20px]">Bem-vindo ao Protótipo ECOUP</h3>
               <p className="text-[#94a3b8] text-[1.1rem] leading-[1.8] mb-[30px]">Assuma o papel de um utilizador. Você registrará o nome da sua atitude sustentável, escolherá a categoria e enviará um arquivo para a nossa IA analisar.</p>
-              <button onClick={iniciarSimulacao} className="bg-[#00f5c8] text-[#050816] py-[15px] px-[30px] font-bold rounded-[30px] uppercase tracking-[1px] hover:bg-[#00ddb3] transition-all">Iniciar Simulação</button>
+              <button onClick={iniciarSimulacao} className="bg-[#00f5c8] text-[#050816] py-[15px] px-[30px] font-bold rounded-[30px] uppercase hover:bg-[#00ddb3] cursor-pointer">Iniciar Simulação</button>
             </div>
           )}
 
           {step === 1 && (
-            <div className="animate-[modalSlideIn_0.4s_ease-out]">
+            <div>
               <h3 className="text-white text-[1.6rem] flex items-center gap-[15px] mb-[30px]">
                 <span className="bg-[#00f5c8] text-[#050816] w-[36px] h-[36px] flex justify-center items-center rounded-full font-bold shadow-[0_0_30px_rgba(0,245,200,0.25)]">1</span> 
                 Qual foi sua atitude sustentável?
@@ -107,11 +107,11 @@ export default function Simulador() {
 
               <p className="text-[#94a3b8] font-bold mb-[20px]">Selecione a categoria para cálculo de impacto:</p>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-[20px] mb-[40px]">
-                {categorias.map((cat) => (
+                {categorias.map((cat, index) => (
                   <button 
-                    key={cat.nome}
+                    key={index}
                     onClick={() => setPontosPendentes(cat.pts)}
-                    className={`p-[20px] rounded-[12px] border bg-[#050816] transition-all text-center ${pontosPendentes === cat.pts ? 'border-[#00f5c8] shadow-[0_0_30px_rgba(0,245,200,0.25)]' : 'border-white/5 hover:border-[#00f5c8]/50'}`}
+                    className={`p-[20px] rounded-[12px] border bg-[#050816] text-center cursor-pointer ${pontosPendentes === cat.pts ? 'border-[#00f5c8] shadow-[0_0_30px_rgba(0,245,200,0.25)]' : 'border-white/5 hover:border-[#00f5c8]/50'}`}
                   >
                     <h4 className="text-white font-bold mb-[5px]">{cat.nome}</h4>
                     <span className="text-[#00f5c8] font-bold text-[0.9rem]">Até {cat.pts} pts</span>
@@ -120,13 +120,13 @@ export default function Simulador() {
               </div>
 
               {pontosPendentes > 0 && (
-                <button onClick={avancarParaEnvio} className="w-full bg-[#00f5c8] text-[#050816] py-[15px] font-bold rounded-[8px] uppercase hover:bg-[#00ddb3] transition-all">Avançar para Envio</button>
+                <button onClick={avancarParaEnvio} className="w-full bg-[#00f5c8] text-[#050816] py-[15px] font-bold rounded-[8px] uppercase hover:bg-[#00ddb3] cursor-pointer">Avançar para Envio</button>
               )}
             </div>
           )}
 
           {step === 2 && (
-            <div className="text-center animate-[modalSlideIn_0.4s_ease-out]">
+            <div className="text-center">
               <h3 className="text-white text-[1.6rem] flex items-center justify-center gap-[15px] mb-[30px]">
                 <span className="bg-[#00f5c8] text-[#050816] w-[36px] h-[36px] flex justify-center items-center rounded-full font-bold">2</span> 
                 Evidência Real
@@ -137,8 +137,8 @@ export default function Simulador() {
                   <p className="text-white mb-[5px]">Ação selecionada:</p>
                   <h4 className="text-[#00f5c8] text-[1.5rem] font-bold">{acaoTitulo}</h4>
                 </div>
-                {!isAnalisando ? (
-                  <button onClick={() => setIsAnalisando(true)} className="bg-[#00f5c8] text-[#050816] py-[15px] px-[30px] font-bold rounded-[8px] uppercase hover:bg-[#00ddb3] transition-all w-full max-w-[350px]">Analisar Evidência na IA</button>
+                {isAnalisando === false ? (
+                  <button onClick={() => setIsAnalisando(true)} className="bg-[#00f5c8] text-[#050816] py-[15px] px-[30px] font-bold rounded-[8px] uppercase hover:bg-[#00ddb3] cursor-pointer w-full max-w-[350px]">Analisar Evidência na IA</button>
                 ) : (
                   <button disabled className="bg-[#00f5c8]/50 text-[#050816] py-[15px] px-[30px] font-bold rounded-[8px] uppercase cursor-not-allowed w-full max-w-[350px]">Analisando...</button>
                 )}
@@ -151,11 +151,11 @@ export default function Simulador() {
           <div className="bg-[#10172a] p-[30px] rounded-[14px] border border-[#00f5c8]/20 shadow-[0_20px_45px_rgba(0,0,0,0.35)]">
             <div className="flex flex-col items-center gap-[10px] mb-[15px]">
               <h4 className="text-white font-bold text-[1.2rem]">Seus Pontos Ecoa</h4>
-              <span className="text-[#00f5c8] font-bold text-[1.8rem] [text-shadow:0_0_30px_rgba(0,245,200,0.25)]">{pontos} / 100</span>
+              <span className="text-[#00f5c8] font-bold text-[1.8rem]">{pontos} / 100</span>
             </div>
-            <div className="w-full bg-[#121a2f] h-[30px] rounded-[20px] overflow-hidden shadow-inner mb-[20px]">
+            <div className="w-full bg-[#121a2f] h-[30px] rounded-[20px] overflow-hidden mb-[20px]">
               <div 
-                className="h-full bg-gradient-to-r from-[#00b377] to-[#00f5c8] transition-all duration-1000 ease-out" 
+                className="h-full bg-[#00f5c8]" 
                 style={{ width: `${pontos}%` }}
               ></div>
             </div>
@@ -163,19 +163,19 @@ export default function Simulador() {
           </div>
 
           <div className="bg-[#060b19] p-[30px_20px] border border-white/5 rounded-[10px] flex flex-col items-center justify-center min-h-[100px] text-center">
-            <p className={`text-[1.1rem] ${isAnalisando ? 'text-[#94a3b8]' : 'text-[#00f5c8] font-bold'}`}>{mensagem}</p>
+            <p className={isAnalisando ? 'text-[#94a3b8]' : 'text-[#00f5c8] font-bold'}>{mensagem}</p>
           </div>
         </aside>
       </div>
 
       {modalSucesso && (
         <div className="fixed top-0 left-0 w-full h-full bg-[#0b132b]/95 flex justify-center items-center z-[9999]">
-          <div className="bg-[#10172a] p-[45px_30px] rounded-[18px] text-center max-w-[480px] w-[95%] border-[2px] border-[#00f5c8] shadow-[0_0_35px_rgba(0,210,138,0.35)] animate-[modalSlideIn_0.4s_ease-out_forwards]">
+          <div className="bg-[#10172a] p-[45px_30px] rounded-[18px] text-center max-w-[480px] w-[95%] border-[2px] border-[#00f5c8] shadow-[0_0_35px_rgba(0,210,138,0.35)]">
             <div className="text-[5rem] mb-[15px]">🏆</div>
             <h2 className="text-white text-[2rem] font-bold mb-[15px]">PARABÉNS!</h2>
             <p className="text-[#00f5c8] text-[1.3rem] font-bold mb-[20px]">Você atingiu 100 Pontos Ecoa!</p>
             <p className="text-[#94a3b8] text-[1.1rem] mb-[30px]">O seu subsídio para a conta de energia elétrica foi desbloqueado com sucesso no sistema da SoulUp!</p>
-            <button onClick={reiniciarCiclo} className="bg-[#00f5c8] text-[#050816] py-[15px] px-[30px] font-bold rounded-[30px] uppercase hover:bg-[#00ddb3]">Começar Novo Ciclo</button>
+            <button onClick={reiniciarCiclo} className="bg-[#00f5c8] text-[#050816] py-[15px] px-[30px] font-bold rounded-[30px] uppercase hover:bg-[#00ddb3] cursor-pointer">Começar Novo Ciclo</button>
           </div>
         </div>
       )}
