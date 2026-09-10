@@ -12,6 +12,7 @@ import Integrantes from './pages/Integrantes.tsx';
 import Simulador from './pages/Simulador.tsx';
 import Dashboard from './pages/Dashboard.tsx';
 import Recompensas from './pages/Recompensas.tsx';
+import RecompensaDetalhes from './pages/RecompensaDetalhes.tsx';
 
 const router = createBrowserRouter([
   {
@@ -25,7 +26,8 @@ const router = createBrowserRouter([
       {path: '/integrantes', element: <Integrantes />},
       {path: '/simulador', element: <Simulador />},
       {path: '/dashboard', element: <Dashboard />},
-      {path: '/recompensas', element: <Recompensas />}
+      {path: '/recompensas', element: <Recompensas />},
+      {path: '/recompensas/:id', element: <RecompensaDetalhes />}
     ]
   }
 ]);
