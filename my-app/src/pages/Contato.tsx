@@ -1,6 +1,5 @@
-import { useForm, SubmitHandler } from 'react-hook-form';
+import { useForm, type SubmitHandler } from 'react-hook-form';
 
-// Tipagem rigorosa exigida pelo Bloco 5
 interface ContatoFormInputs {
   nome: string;
   email: string;
