@@ -8,35 +8,16 @@ export default function Recompensas() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]">
         <FeatureCard 
-          title="Subsídio na Energia" 
+          title="Subsídio Total na Energia" 
           description="O topo do ranking mensal ganha isenção total na conta de luz." 
           icon="⚡"
         />
         <FeatureCard 
-          title="Desconto em Transporte" 
-          description="Troque 50 pontos por créditos em aplicativos de mobilidade urbana." 
-          icon="🚲"
+          title="Subsídio Parcial na Energia" 
+          description="O 2º e 3º lugar do ranking mensal ganham isenção parcial na conta de luz." 
+          icon="⚡"
         />
-        <FeatureCard 
-          title="Produtos Ecológicos" 
-          description="Resgate kits de sustentabilidade para o seu dia a dia por 80 pontos." 
-          icon="♻️"
-        />
-        <FeatureCard 
-          title="Cursos Online" 
-          description="Acesso a cursos de educação ambiental na plataforma parceira por 40 pontos." 
-          icon="📚"
-        />
-        <FeatureCard 
-          title="Doação para ONGs" 
-          description="Converta seus pontos em doações financeiras para instituições de preservação." 
-          icon="💚"
-        />
-        <FeatureCard 
-          title="Ingressos Culturais" 
-          description="Troque 60 pontos por entradas em museus e eventos de conscientização." 
-          icon="🎟️"
-        />
+        
       </div>
     </section>
   );
