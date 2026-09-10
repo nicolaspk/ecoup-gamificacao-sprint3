@@ -32,6 +32,7 @@ export default function Header() {
           <li><Link to="/integrantes" className={linkClass}>Quem Somos</Link></li>
           <li><Link to="/simulador" className={linkClass}>Protótipo</Link></li>
           <li><Link to="/dashboard" className={linkClass}>Solução (Dashboard)</Link></li>
+          <li><Link to="/recompensas" className={linkClass}>Recompensas</Link></li>
         </ul>
       </nav>
     </header>

@@ -11,6 +11,7 @@ import Contato from './pages/Contato.tsx';
 import Integrantes from './pages/Integrantes.tsx';
 import Simulador from './pages/Simulador.tsx';
 import Dashboard from './pages/Dashboard.tsx';
+import Recompensas from './pages/Recompensas.tsx';
 
 const router = createBrowserRouter([
   {
@@ -23,7 +24,8 @@ const router = createBrowserRouter([
       {path: '/contato', element: <Contato />},
       {path: '/integrantes', element: <Integrantes />},
       {path: '/simulador', element: <Simulador />},
-      {path: '/dashboard', element: <Dashboard />}
+      {path: '/dashboard', element: <Dashboard />},
+      {path: '/recompensas', element: <Recompensas />}
     ]
   }
 ]);
