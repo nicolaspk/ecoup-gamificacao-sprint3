@@ -11,6 +11,7 @@ export default function Simulador() {
   const [erro, setErro] = useState(false);
 
   useEffect(() => {
+    // Tipagem básica substituindo o TypeScript avançado
     let timer: any;
     
     if (isAnalisando) {
@@ -69,13 +70,14 @@ export default function Simulador() {
   ];
 
   return (
-    <section className="bg-[#10172a] p-[30px] md:p-[40px] rounded-[12px] shadow-[0_20px_45px_rgba(0,0,0,0.35)] border border-white/5">
+    <section className="bg-[#10172a] p-[30px] md:p-[40px] rounded-[12px] border border-white/5">
       <h2 className="text-white text-[2rem] md:text-[2.2rem] mb-[15px] border-b-[2px] border-[#00f5c8] inline-block pb-[10px] font-bold">Protótipo da Jornada do Usuário</h2>
       <p className="text-[#94a3b8] text-[1.1rem] mb-[40px]">Siga o fluxo interativo para entender como a ECOUP valida ações customizadas.</p>
 
       <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-[35px] items-start">
         
-        <div className="bg-[#10172a] p-[25px] md:p-[45px_35px] rounded-[14px] border border-white/5 shadow-[0_20px_45px_rgba(0,0,0,0.35)] min-h-[450px] flex flex-col justify-center">
+        {/* Painel Central */}
+        <div className="bg-[#10172a] p-[25px] md:p-[45px_35px] rounded-[14px] border border-white/5 min-h-[450px] flex flex-col justify-center">
           
           {step === 0 && (
             <div className="text-center">
@@ -89,7 +91,7 @@ export default function Simulador() {
           {step === 1 && (
             <div>
               <h3 className="text-white text-[1.6rem] flex items-center gap-[15px] mb-[30px]">
-                <span className="bg-[#00f5c8] text-[#050816] w-[36px] h-[36px] flex justify-center items-center rounded-full font-bold shadow-[0_0_30px_rgba(0,245,200,0.25)]">1</span> 
+                <span className="bg-[#00f5c8] text-[#050816] w-[36px] h-[36px] flex justify-center items-center rounded-full font-bold">1</span> 
                 Qual foi sua atitude sustentável?
               </h3>
               
@@ -111,7 +113,7 @@ export default function Simulador() {
                   <button 
                     key={index}
                     onClick={() => setPontosPendentes(cat.pts)}
-                    className={`p-[20px] rounded-[12px] border bg-[#050816] text-center cursor-pointer ${pontosPendentes === cat.pts ? 'border-[#00f5c8] shadow-[0_0_30px_rgba(0,245,200,0.25)]' : 'border-white/5 hover:border-[#00f5c8]/50'}`}
+                    className={`p-[20px] rounded-[12px] border bg-[#050816] text-center cursor-pointer ${pontosPendentes === cat.pts ? 'border-[#00f5c8]' : 'border-white/5 hover:border-[#00f5c8]/50'}`}
                   >
                     <h4 className="text-white font-bold mb-[5px]">{cat.nome}</h4>
                     <span className="text-[#00f5c8] font-bold text-[0.9rem]">Até {cat.pts} pts</span>
@@ -147,12 +149,14 @@ export default function Simulador() {
           )}
         </div>
 
+        {/* Barra Lateral Estática e Limpa */}
         <aside className="flex flex-col gap-[25px]">
-          <div className="bg-[#10172a] p-[30px] rounded-[14px] border border-[#00f5c8]/20 shadow-[0_20px_45px_rgba(0,0,0,0.35)]">
+          <div className="bg-[#10172a] p-[30px] rounded-[14px] border border-[#00f5c8]/20">
             <div className="flex flex-col items-center gap-[10px] mb-[15px]">
               <h4 className="text-white font-bold text-[1.2rem]">Seus Pontos Ecoa</h4>
               <span className="text-[#00f5c8] font-bold text-[1.8rem]">{pontos} / 100</span>
             </div>
+            {/* Barra de progresso sem gradiente ou animações demoradas */}
             <div className="w-full bg-[#121a2f] h-[30px] rounded-[20px] overflow-hidden mb-[20px]">
               <div 
                 className="h-full bg-[#00f5c8]" 
@@ -168,9 +172,10 @@ export default function Simulador() {
         </aside>
       </div>
 
+      {/* Modal de Sucesso Estático */}
       {modalSucesso && (
         <div className="fixed top-0 left-0 w-full h-full bg-[#0b132b]/95 flex justify-center items-center z-[9999]">
-          <div className="bg-[#10172a] p-[45px_30px] rounded-[18px] text-center max-w-[480px] w-[95%] border-[2px] border-[#00f5c8] shadow-[0_0_35px_rgba(0,210,138,0.35)]">
+          <div className="bg-[#10172a] p-[45px_30px] rounded-[18px] text-center max-w-[480px] w-[95%] border-[2px] border-[#00f5c8]">
             <div className="text-[5rem] mb-[15px]">🏆</div>
             <h2 className="text-white text-[2rem] font-bold mb-[15px]">PARABÉNS!</h2>
             <p className="text-[#00f5c8] text-[1.3rem] font-bold mb-[20px]">Você atingiu 100 Pontos Ecoa!</p>

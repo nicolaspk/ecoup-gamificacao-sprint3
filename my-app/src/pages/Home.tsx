@@ -4,7 +4,7 @@ import FeatureCard from '../components/FeatureCard';
 export default function Home() {
   return (
     <>
-      <section className="flex flex-col md:flex-row items-center justify-between gap-[40px] bg-[#10172a] p-[40px_20px] md:p-[60px_40px] rounded-[16px] shadow-[0_20px_45px_rgba(0,0,0,0.35)] mb-[50px] border border-[#00f5c8]/20 text-center md:text-left">
+      <section className="flex flex-col md:flex-row items-center justify-between gap-[40px] bg-[#10172a] p-[40px_20px] md:p-[60px_40px] rounded-[16px] mb-[50px] border border-[#00f5c8]/20 text-center md:text-left">
         <div className="flex-1">
           <h2 className="text-[2.2rem] md:text-[3rem] text-white mb-[20px] leading-[1.2] font-bold">
             O futuro sustentável rende benefícios reais.
@@ -18,7 +18,7 @@ export default function Home() {
           <img 
             src="/img/hero-image.png" 
             alt="Logo sustentável com planeta Terra, folhas verdes e circuitos tecnológicos" 
-            className="max-w-full rounded-[12px] animate-pulse transition-transform duration-700 hover:-translate-y-[15px]" 
+            className="max-w-full rounded-[12px]" 
           />
         </div>
       </section>
