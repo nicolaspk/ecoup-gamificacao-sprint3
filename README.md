@@ -46,7 +46,7 @@ my-app/
 ├── package.json                  # Dependências e scripts do projeto
 ├── tsconfig.json                 # Configurações do compilador TypeScript
 └── vite.config.ts                # Configurações do build e plugins
-
+```
 
 
 ---
@@ -91,51 +91,65 @@ npm run dev
 ---
 
 ## 🖼️ Imagens do Projeto
-Abaixo estão as capturas de tela reais do nosso sistema, demonstrando a interface gráfica e a aplicação da responsividade:
+Abaixo estão as capturas de tela reais do nosso sistema, demonstrando a interface gráfica e a aplicação da responsividade.
 
-### Apresentação Visual (Página Inicial)
-![Apresentação Visual](./my-app/public/img/hero-image.png)
+### Apresentação Visual (Logo ECOUP)
+<img src="./my-app/public/img/hero-image.png" alt="Logo ECOUP" width="700" />
 
 ### Dashboard Executivo
 Painel de análise de dados da SoulUp com métricas interativas.
-![Dashboard Executivo](./my-app/public/img/dashboard.png)
+<br>
+<img src="./my-app/public/img/dashboard.png" alt="Dashboard Executivo" width="700" />
 
 ### Telas do Protótipo (Simulador da IA)
 Capturas do envio de evidências e cálculo do fluxo.
-
-![Simulador Passo 1](./my-app/public/img/simulador.png)
-
-![Simulador Passo 2](./my-app/public/img/interacao-simulador.png)
+<br>
+<img src="./my-app/public/img/simulador.png" alt="Simulador Passo 1" width="700" />
+<br><br>
+<img src="./my-app/public/img/interacao-simulador.png" alt="Simulador Passo 2" width="700" />
 
 ---
 
 ## 👥 Autores
 Equipe responsável pelo desenvolvimento:
 
-* **Maria Eduarda Escandor**
-  * ![Maria Eduarda Escandor](./my-app/public/img/foto-maria1.jpeg)
-  * RM: 568216 | Turma: 1TDSPO
-  * [LinkedIn](https://www.linkedin.com/in/maria-eduarda-escandor-5b1587359/) | [GitHub](https://github.com/mariabatistaescandor-gif)
-
-* **Erick Menezes**
-  * ![Erick Menezes](./my-app/public/img/foto-erick.jpeg)
-  * RM: 570325 | Turma: 1TDSPF
-  * [LinkedIn](https://www.linkedin.com/in/erick-menezes-b53009232/) | [GitHub](https://github.com/Erick488-maker)
-
-* **Matheus Yudi**
-  * ![Matheus Yudi](./my-app/public/img/matheus.png)
-  * RM: 571245 | Turma: 1TDSPF
-  * [LinkedIn](https://www.linkedin.com/in/matheus-yudi7/) | [GitHub](https://github.com/ogmatheus7)
-
-* **Maria Eduarda Lopes de Lima**
-  * ![Maria Eduarda Lopes de Lima](./my-app/public/img/foto-maria2.png)
-  * RM: 572425 | Turma: 1TDSPO
-  * [LinkedIn](https://www.linkedin.com/in/maria-eduarda-lopes-de-lima-1291b6289/) | [GitHub](https://github.com/mariaeduardaalima)
-
-* **Nicolas Sousa da Paixão**
-  * ![Nicolas Sousa da Paixão](./my-app/public/img/foto-nicolas.jpg)
-  * RM: 574141 | Turma: 1TDSPH
-  * [LinkedIn](https://www.linkedin.com/in/nicolas-sousaa/) | [GitHub](https://github.com/nicolaspk)
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="./my-app/public/img/foto-maria1.jpeg" width="120" alt="Maria Eduarda Escandor" style="border-radius: 50%;"><br>
+      <b>Maria Eduarda Escandor</b><br>
+      RM: 568216 | 1TDSPO<br>
+      <a href="https://www.linkedin.com/in/maria-eduarda-escandor-5b1587359/">LinkedIn</a> | <a href="https://github.com/mariabatistaescandor-gif">GitHub</a>
+    </td>
+    <td align="center">
+      <img src="./my-app/public/img/foto-erick.jpeg" width="120" alt="Erick Menezes" style="border-radius: 50%;"><br>
+      <b>Erick Menezes</b><br>
+      RM: 570325 | 1TDSPF<br>
+      <a href="https://www.linkedin.com/in/erick-menezes-b53009232/">LinkedIn</a> | <a href="https://github.com/Erick488-maker">GitHub</a>
+    </td>
+    <td align="center">
+      <img src="./my-app/public/img/matheus.png" width="120" alt="Matheus Yudi" style="border-radius: 50%;"><br>
+      <b>Matheus Yudi</b><br>
+      RM: 571245 | 1TDSPF<br>
+      <a href="https://www.linkedin.com/in/matheus-yudi7/">LinkedIn</a> | <a href="https://github.com/ogmatheus7">GitHub</a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" colspan="1"></td>
+    <td align="center">
+      <img src="./my-app/public/img/foto-maria2.png" width="120" alt="Maria Eduarda Lopes" style="border-radius: 50%;"><br>
+      <b>Maria Eduarda Lopes</b><br>
+      RM: 572425 | 1TDSPO<br>
+      <a href="https://www.linkedin.com/in/maria-eduarda-lopes-de-lima-1291b6289/">LinkedIn</a> | <a href="https://github.com/mariaeduardaalima">GitHub</a>
+    </td>
+    <td align="center">
+      <img src="./my-app/public/img/foto-nicolas.jpg" width="120" alt="Nicolas Sousa" style="border-radius: 50%;"><br>
+      <b>Nicolas Sousa</b><br>
+      RM: 574141 | 1TDSPH<br>
+      <a href="https://www.linkedin.com/in/nicolas-sousaa/">LinkedIn</a> | <a href="https://github.com/nicolaspk">GitHub</a>
+    </td>
+  </tr>
+</table>
 
 ---
 
