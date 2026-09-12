@@ -145,7 +145,7 @@ Equipe de engenharia e design responsável:
       <img src="./my-app/public/img/foto-erick.jpeg" width="120" height="120" alt="Erick Menezes" style="border-radius: 50%; object-fit: cover; border: 3px solid #00f5c8;"><br>
       <b>Erick Menezes</b><br>
       RM: 570325 | 1TDSPF<br>
-      <a href="https://www.linkedin.com/in/erick-menezes-b53009232/">LinkedIn</a> | <a href="https://github.com/Erick488-maker">GitHub</a>
+      <a href="https://www.linkedin.com/in/erick-menezes-b53009232/">LinkedIn</a> | <a href="https://github.com/DevErick-658">GitHub</a>
     </td>
     <td align="center" colspan="2">
       <img src="./my-app/public/img/matheus.png" width="120" height="120" alt="Matheus Yudi" style="border-radius: 50%; object-fit: cover; border: 3px solid #00f5c8;"><br>
