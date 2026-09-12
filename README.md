@@ -1,6 +1,3 @@
-### Parte 1: Tecnologias
-
-```markdown
 <div align="center">
   <img src="./my-app/public/img/hero-image.png" alt="Logo ECOUP" width="250" />
   
@@ -34,11 +31,7 @@ O projeto foi desenvolvido seguindo estritamente as tecnologias e bibliotecas:
 
 ---
 
-```
 
-### Parte 2: Arquitetura e Execução
-
-```markdown
 ## 📁 Arquitetura e Estrutura de Pastas
 O projeto foi modularizado separando rotas (pages) e componentes isolados de UI, garantindo escalabilidade e fácil manutenção:
 
@@ -115,9 +108,6 @@ npm run dev
 ---
 
 
-
-### Parte 3: Demonstração Visual
-```markdown
 ## 🖼️ Galeria do Projeto
 Abaixo estão as capturas reais da aplicação, demonstrando a nossa identidade visual, responsividade e interatividade.
 
@@ -139,11 +129,6 @@ Abaixo estão as capturas reais da aplicação, demonstrando a nossa identidade 
 
 ---
 
-```
-
-### Parte 4: Integrantes e Contato
-
-```markdown
 ## 👥 Autores e Desenvolvedores
 Equipe de engenharia e design responsável pela entrega da Sprint 03:
 
@@ -194,7 +179,7 @@ Entre em contato com o time:
 📧 **E-mail Oficial:** [materiafiap@gmail.com](mailto:materiafiap@gmail.com)
 
 <div align="center">
-  <sub>Desenvolvido com dedicação pela equipe ECOUP © 2024</sub>
+  <sub>Desenvolvido com dedicação pela equipe ECOUP © 2026</sub>
 </div>
 
 ```
