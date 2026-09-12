@@ -1,4 +1,4 @@
-import FeatureCard from '../components/FeatureCard';
+import FeatureCard from '../../components/Cards/FeatureCard';
 
 export default function Sobre() {
   return (

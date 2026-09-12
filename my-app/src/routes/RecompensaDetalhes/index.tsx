@@ -4,7 +4,6 @@ export default function RecompensaDetalhes() {
   const { id } = useParams();
   const navigate = useNavigate();
 
-  // Lógica simples para mudar o conteúdo com base no ID da rota dinâmica
   const detalhes = id === '1' 
     ? {
         titulo: "Subsídio Total na Energia",

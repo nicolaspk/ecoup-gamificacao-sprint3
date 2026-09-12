@@ -30,7 +30,7 @@ my-app/
 │   │   ├── Footer.tsx
 │   │   ├── Header.tsx
 │   │   └── MemberCard.tsx
-│   ├── pages/                  # Componentes de páginas roteáveis
+│   ├── routes/                  # Componentes de páginas roteáveis
 │   │   ├── Contato.tsx
 │   │   ├── Dashboard.tsx
 │   │   ├── Faq.tsx
@@ -113,9 +113,9 @@ Equipe responsável pelo desenvolvimento:
 * [LinkedIn](https://www.google.com/search?q=https://www.linkedin.com/in/erick-menezes-b53009232/) | [GitHub](https://www.google.com/search?q=https://github.com/Erick488-maker)
 
 
-* **Katerine Hildebrand**
-* RM: 569809 | Turma: 1TDSPF
-* [LinkedIn](https://www.google.com/search?q=https://www.linkedin.com/in/katerine-hildebrand-8928752a3/) | [GitHub](https://www.google.com/search?q=https://github.com/katpeaga)
+* **Matheus Yudi**
+* RM: 571245 | Turma: 1TDSPF
+* [LinkedIn](https://www.linkedin.com/in/matheus-yudi7/) | [GitHub](https://github.com/ogmatheus7)
 
 
 * **Maria Eduarda Lopes de Lima**

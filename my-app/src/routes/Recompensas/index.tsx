@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import FeatureCard from '../components/FeatureCard';
+import FeatureCard from '../../components/Cards/FeatureCard';
 
 export default function Recompensas() {
   const navigate = useNavigate();

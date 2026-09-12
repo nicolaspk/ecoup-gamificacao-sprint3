@@ -1,5 +1,5 @@
-import Button from '../components/Button';
-import FeatureCard from '../components/FeatureCard';
+import Button from '../../components/Botao/Button';
+import FeatureCard from '../../components/Cards/FeatureCard';
 
 export default function Home() {
   return (
