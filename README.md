@@ -17,8 +17,6 @@ O projeto foi desenvolvido seguindo estritamente as tecnologias e bibliotecas:
 
 ---
 
-```
-
 ## 📁 Estrutura de Pastas do Projeto
 A arquitetura foi organizada separando rotas e componentes reutilizáveis de forma escalável e modular, com cada página ou módulo possuindo seu próprio diretório:
 
@@ -49,7 +47,7 @@ my-app/
 ├── tsconfig.json                 # Configurações do compilador TypeScript
 └── vite.config.ts                # Configurações do build e plugins
 
-```
+
 
 ---
 
@@ -92,52 +90,50 @@ npm run dev
 
 ---
 
-
 ## 🖼️ Imagens do Projeto
 Abaixo estão as capturas de tela reais do nosso sistema, demonstrando a interface gráfica e a aplicação da responsividade:
 
 ### Apresentação Visual (Página Inicial)
-![Apresentação Visual](./public/img/hero-image.png)
+![Apresentação Visual](./my-app/public/img/hero-image.png)
 
 ### Dashboard Executivo
 Painel de análise de dados da SoulUp com métricas interativas.
-![Dashboard Executivo](./public/img/dashboard.png)
+![Dashboard Executivo](./my-app/public/img/dashboard.png)
 
 ### Telas do Protótipo (Simulador da IA)
 Capturas do envio de evidências e cálculo do fluxo.
 
-![Simulador Passo 1](./public/img/simulador.png)
+![Simulador Passo 1](./my-app/public/img/simulador.png)
 
-![Simulador Passo 2](./public/img/interacao-simulador.png)
+![Simulador Passo 2](./my-app/public/img/interacao-simulador.png)
 
-
-
+---
 
 ## 👥 Autores
 Equipe responsável pelo desenvolvimento:
 
 * **Maria Eduarda Escandor**
-  * ![Maria Eduarda Escandor](./public/img/foto-maria1.jpeg)
+  * ![Maria Eduarda Escandor](./my-app/public/img/foto-maria1.jpeg)
   * RM: 568216 | Turma: 1TDSPO
   * [LinkedIn](https://www.linkedin.com/in/maria-eduarda-escandor-5b1587359/) | [GitHub](https://github.com/mariabatistaescandor-gif)
 
 * **Erick Menezes**
-  * ![Erick Menezes](./public/img/foto-erick.jpeg)
+  * ![Erick Menezes](./my-app/public/img/foto-erick.jpeg)
   * RM: 570325 | Turma: 1TDSPF
   * [LinkedIn](https://www.linkedin.com/in/erick-menezes-b53009232/) | [GitHub](https://github.com/Erick488-maker)
 
 * **Matheus Yudi**
-  * ![Matheus Yudi](./public/img/matheus.png)
+  * ![Matheus Yudi](./my-app/public/img/matheus.png)
   * RM: 571245 | Turma: 1TDSPF
   * [LinkedIn](https://www.linkedin.com/in/matheus-yudi7/) | [GitHub](https://github.com/ogmatheus7)
 
 * **Maria Eduarda Lopes de Lima**
-  * ![Maria Eduarda Lopes de Lima](./public/img/foto-maria2.png)
+  * ![Maria Eduarda Lopes de Lima](./my-app/public/img/foto-maria2.png)
   * RM: 572425 | Turma: 1TDSPO
   * [LinkedIn](https://www.linkedin.com/in/maria-eduarda-lopes-de-lima-1291b6289/) | [GitHub](https://github.com/mariaeduardaalima)
 
 * **Nicolas Sousa da Paixão**
-  * ![Nicolas Sousa da Paixão](./public/img/foto-nicolas.jpg)
+  * ![Nicolas Sousa da Paixão](./my-app/public/img/foto-nicolas.jpg)
   * RM: 574141 | Turma: 1TDSPH
   * [LinkedIn](https://www.linkedin.com/in/nicolas-sousaa/) | [GitHub](https://github.com/nicolaspk)
 
@@ -146,5 +142,3 @@ Equipe responsável pelo desenvolvimento:
 ## 📞 Contato
 Dúvidas ou suporte sobre a implementação da Gamificação Sustentável:
 * **E-mail Oficial da Equipe:** materiafiap@gmail.com
-
-```
