@@ -92,7 +92,6 @@ npm run dev
 
 ---
 
-```
 
 ## 🖼️ Imagens do Projeto
 Abaixo estão as capturas de tela reais do nosso sistema, demonstrando a interface gráfica e a aplicação da responsividade:
@@ -111,9 +110,8 @@ Capturas do envio de evidências e cálculo do fluxo.
 
 ![Simulador Passo 2](./public/img/interacao-simulador.png)
 
----
 
-```
+
 
 ## 👥 Autores
 Equipe responsável pelo desenvolvimento:
