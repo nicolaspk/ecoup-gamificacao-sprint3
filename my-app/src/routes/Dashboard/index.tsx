@@ -14,7 +14,6 @@ export default function Dashboard() {
       <h2 className="text-white text-[2rem] md:text-[2.2rem] mb-[15px] border-b-[2px] border-[#00f5c8] inline-block pb-[10px] font-bold">Análise de Dados e Solução ECOUP</h2>
       <p className="text-[#94a3b8] text-[1.1rem] mb-[40px]">O painel abaixo apresenta o diagnóstico do problema enfrentado pela SoulUp e como o nosso sistema atua para reverter este cenário.</p>
 
-      {/* Grid de Métricas */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[25px] mb-[50px]">
         <article onClick={() => handleOpenModal('Total de Usuários', '61.242')} className="bg-[#121a2f] p-[30px_20px] rounded-[12px] text-center border border-white/5 cursor-pointer transition-all duration-250 hover:-translate-y-[5px] hover:border-[#00f5c8] hover:shadow-[0_0_30px_rgba(0,245,200,0.25)]">
           <h3 className="text-[#94a3b8] text-[1.1rem] mb-[10px] font-bold">Total de Usuários</h3>

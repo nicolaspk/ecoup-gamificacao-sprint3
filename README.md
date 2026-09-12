@@ -11,41 +11,49 @@ O projeto foi desenvolvido seguindo estritamente as tecnologias e bibliotecas ex
 * **Vite (`vite`)**: Bundler e ambiente de desenvolvimento local de altíssima performance.
 * **TypeScript (`typescript`)**: Utilizado para tipagem estática básica e segurança estrutural do código.
 * **Tailwind CSS (`tailwindcss`, `@tailwindcss/vite`)**: Framework utilitário utilizado para 100% da estilização e responsividade (Mobile-First, Tablet, Desktop), substituindo arquivos CSS externos.
-* **React Router DOM (`react-router-dom`)**: Gerenciamento de navegação em SPA via `createBrowserRouter` e `<Outlet/>`. Utilização avançada de navegação e rotas dinâmicas com os hooks **`useNavigate`** e **`useParams`** na seção de recompensas.
+* **React Router DOM (`react-router-dom`)**: Gerenciamento de navegação em SPA via `createBrowserRouter` e `<Outlet/>`. Utilização de navegação estática e rotas dinâmicas com os hooks **`useNavigate`** e **`useParams`**.
 * **React Hook Form (`react-hook-form`)**: Biblioteca para gerenciamento de estado e validação nativa de formulários (aplicada na página de Contato).
 
 ---
 
 ## 📁 Estrutura de Pastas do Projeto
-A arquitetura foi organizada separando rotas e componentes reutilizáveis, seguindo o padrão oficial da disciplina:
+A arquitetura foi organizada separando rotas e componentes reutilizáveis de forma escalável e modular, com cada página ou módulo possuindo seu próprio diretório:
 
 ```text
 my-app/
 ├── public/
-│   └── img/                    # Imagens estáticas, fotos dos integrantes e ícones
+│   └── img/                      # Imagens estáticas, mockups e fotos da equipe
+│       ├── dashboard.png
+│       ├── foto-erick.jpeg
+│       ├── foto-maria1.jpeg
+│       ├── foto-maria2.png
+│       ├── foto-nicolas.jpg
+│       ├── hero-image.png
+│       ├── interacao-simulador.png
+│       ├── matheus.png
+│       └── simulador.png
 ├── src/
-│   ├── components/             # Componentes isolados e reutilizáveis (UI)
-│   │   ├── Button.tsx
-│   │   ├── FeatureCard.tsx
-│   │   ├── Footer.tsx
-│   │   ├── Header.tsx
-│   │   └── MemberCard.tsx
-│   ├── routes/                  # Componentes de páginas roteáveis
-│   │   ├── Contato.tsx
-│   │   ├── Dashboard.tsx
-│   │   ├── Faq.tsx
-│   │   ├── Home.tsx
-│   │   ├── Integrantes.tsx
-│   │   ├── Recompensas.tsx       # Catálogo de subsídios (Rota Estática)
-│   │   ├── RecompensaDetalhes.tsx# Detalhes do subsídio (Rota Dinâmica)
-│   │   ├── Simulador.tsx
-│   │   └── Sobre.tsx
-│   ├── App.tsx                 # Componente de Layout base (Injeta Header, Footer e Outlet)
-│   ├── main.tsx                # Ponto de entrada e configuração do roteador central
-│   └── index.css               # Arquivo CSS global (contendo apenas a injeção do Tailwind)
-├── package.json                # Dependências e scripts do projeto
-├── tsconfig.json               # Configurações do compilador TypeScript
-└── vite.config.ts              # Configurações do build e plugins do Vite + Tailwind
+│   ├── components/               # Componentes isolados e reutilizáveis (UI)
+│   │   ├── Botao/
+│   │   ├── Cabecalho/
+│   │   ├── Cards/
+│   │   └── Rodape/
+│   ├── routes/                   # Componentes de páginas roteáveis (SPA)
+│   │   ├── Contato/              # index.tsx
+│   │   ├── Dashboard/            # index.tsx
+│   │   ├── Faq/                  # index.tsx
+│   │   ├── Home/                 # index.tsx
+│   │   ├── Integrantes/          # index.tsx
+│   │   ├── RecompensaDetalhes/   # index.tsx (Rota Dinâmica)
+│   │   ├── Recompensas/          # index.tsx (Rota Estática)
+│   │   ├── Simulador/            # index.tsx
+│   │   └── Sobre/                # index.tsx
+│   ├── App.tsx                   # Componente de Layout base (Injeta Cabecalho, Rodape e Outlet)
+│   ├── main.tsx                  # Ponto de entrada e configuração do roteador central
+│   └── index.css                 # Arquivo CSS global (contendo apenas a injeção do Tailwind)
+├── package.json                  # Dependências e scripts do projeto
+├── tsconfig.json                 # Configurações do compilador TypeScript
+└── vite.config.ts                # Configurações do build e plugins do Vite + Tailwind
 
 ```
 
@@ -85,17 +93,18 @@ npm run dev
 
 5. **Acesso:** Abra o navegador na URL indicada no terminal (geralmente `http://localhost:5173/`).
 
-* **Link do repositório no GitHub:** [https://github.com/nicolaspk/ecoup-gamificacao-sprint3](https://www.google.com/search?q=https://github.com/nicolaspk/ecoup-gamificacao-sprint3)
+* **Link do repositório no GitHub:** [Repositório ECOUP](https://github.com/nicolaspk/ecoup-gamificacao-sprint3)
 * **Link do vídeo no YouTube:** [INSERIR LINK DO VÍDEO AQUI]
 
 ---
 
 ## 🖼️ Imagens e Ícones do Projeto
 
-A interface conta com iconografia nativa e imagens responsivas localizadas na pasta `/public/img/`. Destaque para:
+A interface conta com iconografia nativa e imagens responsivas localizadas na pasta `/public/img/`. Destaque para as demonstrações da solução:
 
-* **Dashboard Executivo (`dashboard.png`)**: Painel de análise de dados com métricas interativas baseadas em `useState`.
-* **Simulador da Jornada (`interacao-simulador.png`)**: Protótipo que ilustra o envio de evidências e o cálculo de Pontos Ecoa simulado via `useEffect`.
+* **Dashboard Executivo (`dashboard.png`)**: Painel de análise de dados da SoulUp com métricas interativas.
+* **Telas do Protótipo (`simulador.png`, `interacao-simulador.png`)**: Ilustrações e capturas do envio de evidências e cálculo do fluxo da IA.
+* **Apresentação Visual (`hero-image.png`)**: Imagem de destaque utilizada na página inicial do projeto.
 
 ---
 
@@ -136,5 +145,3 @@ Equipe responsável pelo desenvolvimento:
 Dúvidas ou suporte sobre a implementação da Gamificação Sustentável:
 
 * **E-mail Oficial da Equipe:** materiafiap@gmail.com
-
-```
