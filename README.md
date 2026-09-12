@@ -131,7 +131,7 @@ Abaixo estão as capturas reais da aplicação, demonstrando a nossa identidade 
 ---
 
 ## 👥 Desenvolvedores
-Equipe de engenharia e design responsável pela entrega da Sprint 03:
+Equipe de engenharia e design responsável:
 
 <table align="center">
   <tr>
