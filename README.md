@@ -181,5 +181,3 @@ Entre em contato com o time:
 <div align="center">
   <sub>Desenvolvido com dedicação pela equipe ECOUP © 2026</sub>
 </div>
-
-```
