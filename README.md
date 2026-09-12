@@ -96,6 +96,7 @@ npm install
 npm run dev
 
 ```
+---
 
 
 5. **Acesso:** Abra o seu navegador na URL exibida no terminal (geralmente `http://localhost:5173/`).
@@ -129,24 +130,24 @@ Abaixo estão as capturas reais da aplicação, demonstrando a nossa identidade 
 
 ---
 
-## 👥 Autores e Desenvolvedores
+## 👥 Desenvolvedores
 Equipe de engenharia e design responsável pela entrega da Sprint 03:
 
 <table align="center">
   <tr>
-    <td align="center" width="33%">
+    <td align="center" colspan="2">
       <img src="./my-app/public/img/foto-maria1.jpeg" width="120" height="120" alt="Maria Eduarda Escandor" style="border-radius: 50%; object-fit: cover; border: 3px solid #00f5c8;"><br>
       <b>Maria Eduarda Escandor</b><br>
       RM: 568216 | 1TDSPO<br>
       <a href="https://www.linkedin.com/in/maria-eduarda-escandor-5b1587359/">LinkedIn</a> | <a href="https://github.com/mariabatistaescandor-gif">GitHub</a>
     </td>
-    <td align="center" width="33%">
+    <td align="center" colspan="2">
       <img src="./my-app/public/img/foto-erick.jpeg" width="120" height="120" alt="Erick Menezes" style="border-radius: 50%; object-fit: cover; border: 3px solid #00f5c8;"><br>
       <b>Erick Menezes</b><br>
       RM: 570325 | 1TDSPF<br>
       <a href="https://www.linkedin.com/in/erick-menezes-b53009232/">LinkedIn</a> | <a href="https://github.com/Erick488-maker">GitHub</a>
     </td>
-    <td align="center" width="33%">
+    <td align="center" colspan="2">
       <img src="./my-app/public/img/matheus.png" width="120" height="120" alt="Matheus Yudi" style="border-radius: 50%; object-fit: cover; border: 3px solid #00f5c8;"><br>
       <b>Matheus Yudi</b><br>
       RM: 571245 | 1TDSPF<br>
@@ -154,14 +155,13 @@ Equipe de engenharia e design responsável pela entrega da Sprint 03:
     </td>
   </tr>
   <tr>
-    <td align="center" width="33%" style="border: none;"></td>
-    <td align="center" width="33%">
+    <td align="center" colspan="3">
       <img src="./my-app/public/img/foto-maria2.png" width="120" height="120" alt="Maria Eduarda Lopes" style="border-radius: 50%; object-fit: cover; border: 3px solid #00f5c8;"><br>
       <b>Maria Eduarda Lopes</b><br>
       RM: 572425 | 1TDSPO<br>
       <a href="https://www.linkedin.com/in/maria-eduarda-lopes-de-lima-1291b6289/">LinkedIn</a> | <a href="https://github.com/mariaeduardaalima">GitHub</a>
     </td>
-    <td align="center" width="33%">
+    <td align="center" colspan="3">
       <img src="./my-app/public/img/foto-nicolas.jpg" width="120" height="120" alt="Nicolas Sousa" style="border-radius: 50%; object-fit: cover; border: 3px solid #00f5c8;"><br>
       <b>Nicolas Sousa</b><br>
       RM: 574141 | 1TDSPH<br>
